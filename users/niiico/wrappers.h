@@ -10,8 +10,6 @@ expanded before being used as arguments to the LAYOUT_xxx macro.
 #endif
 
 // clang-format off
-#define KEYMAP_wrapper(...)                  LAYOUT(__VA_ARGS__)
-#define LAYOUT_wrapper(...)                  LAYOUT(__VA_ARGS__)
 
 
 /*
@@ -25,15 +23,15 @@ NOTE: These are all the same length.  If you do a search/replace
   then you need to add/remove underscores to keep the
   lengths consistent.
 */
-#define __________________BEPO_L0__________________        BP_DQOT,    BP_LGIL,    BP_RGIL, BP_LPRN, BP_RPRN
-#define __________________BEPO_L1__________________        BP_B,       BP_E_ACUTE, BP_P,    BP_O,    BP_E_GRAVE
-#define __________________BEPO_L2__________________        BP_A,       BP_U,       BP_I,    BP_E,    BP_COMMA
-#define __________________BEPO_L3__________________        BP_A_GRAVE, BP_Y,       BP_X,    BP_DOT,  BP_K
+#define __________________BEPO_L0__________________        BP_DQUO, BP_LDAQ, BP_RDAQ, BP_LPRN, BP_RPRN
+#define __________________BEPO_L1__________________        BP_B,    BP_EACU, BP_P,    BP_O,    BP_EGRV
+#define __________________BEPO_L2__________________        BP_A,    BP_U,    BP_I,    BP_E,    BP_COMM
+#define __________________BEPO_L3__________________        BP_AGRV, BP_Y,    BP_X,    BP_DOT,  BP_K
 
 #define __________________BEPO_R0__________________        BP_AT,   BP_PLUS,  BP_MINUS, BP_SLASH, BP_ASTR
-#define __________________BEPO_R1__________________        BP_DCRC, BP_V,     BP_D,     BP_L,     BP_J
+#define __________________BEPO_R1__________________        BP_DCIR, BP_V,     BP_D,     BP_L,     BP_J
 #define __________________BEPO_R2__________________        BP_C,    BP_T,     BP_S,     BP_R,     BP_N
-#define __________________BEPO_R3__________________        BP_APOS, BP_Q,     BP_G,     BP_H,     BP_F
+#define __________________BEPO_R3__________________        BP_QUOT, BP_Q,     BP_G,     BP_H,     BP_F
 
 #define ______________AZERTY_BEPO_L0_______________        FR_QUOT,         FR_LESS, FR_GRTR, FR_LPRN, FR_RPRN
 #define ______________AZERTY_BEPO_L1_______________        KC_B,            FR_EACU, KC_P,    KC_O,    FR_EGRV
@@ -43,7 +41,7 @@ NOTE: These are all the same length.  If you do a search/replace
 #define ______________AZERTY_BEPO_R0_______________        FR_AT,   FR_PLUS, FR_MINS, FR_SLSH, FR_ASTR
 #define ______________AZERTY_BEPO_R1_______________        KC_LBRC,	KC_V,    KC_D,    KC_L,    KC_J
 #define ______________AZERTY_BEPO_R2_______________        KC_C,    KC_T,    KC_S,    KC_R,    KC_N
-#define ______________AZERTY_BEPO_R3_______________        FR_APOS,	FR_Q,    KC_G,    KC_H,    RALT_T(KC_F)
+#define ______________AZERTY_BEPO_R3_______________        FR_QUOT,	FR_Q,    KC_G,    KC_H,    RALT_T(KC_F)
 
 #define ________________AZERTY_L0__________________        FR_AMPR, FR_EACU, FR_DQUO, FR_QUOT, FR_LPRN
 #define ________________AZERTY_L1__________________        FR_A,    FR_Z,    FR_E,    FR_R,    FR_T
@@ -71,21 +69,21 @@ NOTE: These are all the same length.  If you do a search/replace
 #define ___________________BLANK___________________        _______, _______, _______, _______, _______
 
 
-#define _________________SYMBL_L1__________________        BP_DQOT,	BP_LGIL, BP_RGIL, BP_LPRN, BP_RPRN
+#define _________________SYMBL_L1__________________        BP_DQUO, BP_LDAQ, BP_RDAQ, BP_LPRN, BP_RPRN
 #define _________________SYMBL_L2__________________        BP_MDSH, BP_LABK, BP_RABK, BP_LBRC, BP_RBRC
 #define _________________SYMBL_L3__________________        BP_BSLS, BP_LCBR, BP_RCBR, BP_LCBR, BP_RCBR
 
-#define _________________SYMBL_R1__________________        BP_AT,      BP_PLUS, BP_MINS, BP_SLSH, BP_ASTR
-#define _________________SYMBL_R2__________________        BP_PERCENT, BP_AMPR, BP_PIPE, BP_BSLS,   KC_NO
-#define _________________SYMBL_R3__________________        BP_GRV,     KC_PSCR, KC_SLCK, KC_PAUS,   KC_NO
+#define _________________SYMBL_R1__________________        BP_AT,   BP_PLUS, BP_MINS, BP_SLSH, BP_ASTR
+#define _________________SYMBL_R2__________________        BP_PERC, BP_AMPR, BP_PIPE, BP_BSLS,   KC_NO
+#define _________________SYMBL_R3__________________        BP_GRV,  KC_PSCR, KC_SLCK, KC_PAUS,   KC_NO
 
 #define _________________NUMBR_L1__________________        ________________NUMBER_LEFT________________
 #define _________________NUMBR_L2__________________        _________________FUNC_ROW1_________________
 #define _________________NUMBR_L3__________________        _________________FUNC_ROW2_________________
 
 #define _________________NUMBR_R1__________________        ________________NUMBER_RIGHT_______________
-#define _________________NUMBR_R2__________________        BP_PERCENT, BP_4, BP_5, BP_6, BP_MINS
-#define _________________NUMBR_R3__________________        BP_ASTR,    BP_1, BP_2, BP_3, KC_PDOT
+#define _________________NUMBR_R2__________________        BP_PERC, BP_4, BP_5, BP_6, BP_MINS
+#define _________________NUMBR_R3__________________        BP_ASTR, BP_1, BP_2, BP_3, KC_PDOT
 
 
 #define _________________ADJUST_L1_________________        ___________________BLANK___________________
