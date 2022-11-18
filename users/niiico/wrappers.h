@@ -98,8 +98,8 @@ NOTE: These are all the same length.  If you do a search/replace
 #define ___________________NAV_L2__________________        KC_NO,   KC_DEL,  KC_END,  KC_PGDN, KC_SLCK
 #define ___________________NAV_L3__________________        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_PAUS
 
-#define ___________________NAV_R1__________________        KC_NO,   KC_INS,           KC_HOME,   KC_PGUP, KC_PSCR
-#define ___________________NAV_R2__________________        KC_NO,   KC_DEL,           KC_END,    KC_PGDN, KC_SLCK
-#define ___________________NAV_R3__________________        KC_NO,   TO(_AZERTY_BEPO), TO(_BEPO), KC_NO,   KC_PAUS
+#define ___________________NAV_R1__________________        KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO
+#define ___________________NAV_R2__________________        KC_HOME, KC_NO,   KC_UP,   KC_NO,    KC_PGUP
+#define ___________________NAV_R3__________________        KC_END,  KC_LEFT, KC_DOWN, KC_RIGHT, KC_PGDN
 
 // clang-format on
