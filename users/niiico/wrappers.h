@@ -23,25 +23,25 @@ NOTE: These are all the same length.  If you do a search/replace
   then you need to add/remove underscores to keep the
   lengths consistent.
 */
-#define __________________BEPO_L0__________________        BP_DQUO, BP_LDAQ, BP_RDAQ,      BP_LPRN,      BP_RPRN
-#define __________________BEPO_L1__________________        BP_B,    BP_EACU, BP_P,         BP_O,         BP_EGRV
-#define __________________BEPO_L2__________________        BP_A,    BP_U,    LALT_T(BP_I), LCTL_T(BP_E), BP_COMM
-#define __________________BEPO_L3__________________        BP_AGRV, BP_Y,    BP_X,         BP_DOT,       BP_K
+#define __________________BEPO_L0__________________        BP_DQUO,       BP_LDAQ, BP_RDAQ, BP_LPRN,      BP_RPRN
+#define __________________BEPO_L1__________________        BP_B,          BP_EACU, BP_P,    BP_O,         BP_EGRV
+#define __________________BEPO_L2__________________        LRALT_T(BP_A), LSFT_T(BP_U),     LALT_T(BP_I), LCTL_T(BP_E), BP_COMM
+#define __________________BEPO_L3__________________        BP_AGRV, BP_Y, BP_X,             BP_DOT,       BP_K
 
-#define __________________BEPO_R0__________________        BP_AT,   BP_PLUS,      BP_MINUS,     BP_SLSH, BP_ASTR
-#define __________________BEPO_R1__________________        BP_DCIR, BP_V,         BP_D,         BP_L,     BP_J
-#define __________________BEPO_R2__________________        BP_C,    LCTL_T(BP_T), LALT_T(BP_S), BP_R,     BP_N
-#define __________________BEPO_R3__________________        BP_QUOT, BP_Q,         BP_G,         BP_H,     BP_F
+#define __________________BEPO_R0__________________        BP_AT,   BP_PLUS,      BP_MINUS,     BP_SLSH,      BP_ASTR
+#define __________________BEPO_R1__________________        BP_DCIR, BP_V,         BP_D,         BP_L,         BP_J
+#define __________________BEPO_R2__________________        BP_C,    LCTL_T(BP_T), LALT_T(BP_S), LSFT_T(BP_R), RALT_T(BP_N)
+#define __________________BEPO_R3__________________        BP_QUOT, BP_Q,         BP_G,         BP_H,         BP_F
 
 #define ______________AZERTY_BEPO_L0_______________        FR_DQUO,         FR_LDAQ, FR_RDAQ,      FR_LPRN,      FR_RPRN
-#define ______________AZERTY_BEPO_L1_______________        KC_B,            FR_EACU, KC_P,         KC_O,         FR_EGRV
-#define ______________AZERTY_BEPO_L2_______________        FR_A,            KC_U,    LALT_T(KC_I), LCTL_T(KC_E), FR_COMM
-#define ______________AZERTY_BEPO_L3_______________        LALT_T(FR_AGRV), KC_Y,	 KC_X,         FR_DOT,       KC_K
+#define ______________AZERTY_BEPO_L1_______________        FR_B,            FR_EACU, FR_P,         FR_O,         FR_EGRV
+#define ______________AZERTY_BEPO_L2_______________        FR_A,            FR_U,    LALT_T(FR_I), LCTL_T(FR_E), FR_COMM
+#define ______________AZERTY_BEPO_L3_______________        LALT_T(FR_AGRV), FR_Y,	 FR_X,         FR_DOT,       FR_K
 
 #define ______________AZERTY_BEPO_R0_______________        FR_AT,   FR_PLUS,      FR_MINS,      FR_SLSH, FR_ASTR
-#define ______________AZERTY_BEPO_R1_______________        FR_CIRC,	KC_V,         KC_D,         KC_L,    KC_J
-#define ______________AZERTY_BEPO_R2_______________        KC_C,    LCTL_T(KC_T), LALT_T(KC_S), KC_R,    KC_N
-#define ______________AZERTY_BEPO_R3_______________        FR_QUOT,	FR_Q,         KC_G,         KC_H,    RALT_T(KC_F)
+#define ______________AZERTY_BEPO_R1_______________        FR_CIRC,	FR_V,         FR_D,         FR_L,    FR_J
+#define ______________AZERTY_BEPO_R2_______________        FR_C,    LCTL_T(FR_T), LALT_T(FR_S), FR_R,    FR_N
+#define ______________AZERTY_BEPO_R3_______________        FR_QUOT,	FR_Q,         FR_G,         FR_H,    RALT_T(FR_F)
 
 #define ________________AZERTY_L0__________________        FR_AMPR, FR_EACU, FR_DQUO, FR_QUOT, FR_LPRN
 #define ________________AZERTY_L1__________________        FR_A,    FR_Z,    FR_E,    FR_R,    FR_T
