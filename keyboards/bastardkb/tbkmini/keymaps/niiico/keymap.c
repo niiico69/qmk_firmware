@@ -36,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TAB,        __________________BEPO_L1__________________,            __________________BEPO_R1__________________,BP_Z,
        BP_W,          __________________BEPO_L2__________________,            __________________BEPO_R2__________________,BP_M,
        LSFT_T(BP_DLR),__________________BEPO_L3__________________,            __________________BEPO_R3__________________,BP_CCED,
-            LT(_NUMBR,KC_ESC), LSFT_T(KC_BSPC), LT(_SYMBL,KC_DEL),            LT(_SYMBL,KC_LGUI), RSFT_T(KC_SPC), LT(_NUMBR,KC_ENTER)
+            LT(_NAV,KC_ESC), LSFT_T(KC_BSPC), LT(_SYMBL,KC_DEL),            LT(_SYMBL,KC_LGUI), RSFT_T(KC_SPC), LT(_NUMBR,KC_ENTER)
     ),
     [_AZERTY_BEPO] = LAYOUT_wrapper(
         KC_TAB, ______________AZERTY_BEPO_L1_______________,                  ______________AZERTY_BEPO_R1_______________, FR_Z,
