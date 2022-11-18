@@ -22,7 +22,7 @@
       KC_TAB,         K01,         K02,  K03,  K04,  K05,                                                              K06,   K07,   K08,   K09,   K0A,  BP_Z, \
       BP_W,           K11,         K12,  K13,  K14,  K15,                                                              K16,   K17,   K18,   K19,   K1A,  BP_M, \
       LSFT_T(BP_DLR), LALT_T(K21), K22,  K23,  K24,  K25,                                                              K26,   K27,   K28,   K29,   RALT_T(K2A), BP_CCED, \
-                           LT(_NUMBR,KC_SPC), LSFT_T(KC_BSPC), LT(_SYMBL,KC_DEL),       LT(_SYMBL,KC_LGUI), RSFT_T(KC_SPC), LT(_NUMBR,KC_ENTER) \
+                           LT(_NAV,KC_SPC), LSFT_T(KC_BSPC), LT(_SYMBL,KC_DEL),       LT(_SYMBL,KC_LGUI), RSFT_T(KC_SPC), LT(_NUMBR,KC_ENTER) \
   )
 
 // clang-format on
