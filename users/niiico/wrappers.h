@@ -23,15 +23,29 @@ NOTE: These are all the same length.  If you do a search/replace
   then you need to add/remove underscores to keep the
   lengths consistent.
 */
-#define __________________BEPO_L0__________________        BP_DQUO,       BP_LDAQ,      BP_RDAQ,      BP_LPRN,      BP_RPRN
-#define __________________BEPO_L1__________________        BP_B,          BP_EACU,      BP_P,         BP_O,         BP_EGRV
-#define __________________BEPO_L2__________________        RALT_T(BP_A),  LSFT_T(BP_U), LALT_T(BP_I), LCTL_T(BP_E), BP_COMM
-#define __________________BEPO_L3__________________        BP_AGRV,       BP_Y,         BP_X,         BP_DOT,       BP_K
 
-#define __________________BEPO_R0__________________        BP_AT,   BP_PLUS,      BP_MINUS,     BP_SLSH,      BP_ASTR
-#define __________________BEPO_R1__________________        BP_DCIR, BP_V,         BP_D,         BP_L,         BP_J
-#define __________________BEPO_R2__________________        BP_C,    LCTL_T(BP_T), LALT_T(BP_S), LSFT_T(BP_R), RALT_T(BP_N)
-#define __________________BEPO_R3__________________        BP_QUOT, BP_Q,         BP_G,         BP_H,         RALT_T(BP_F)
+// Left-hand home row mods
+#define HOME_A RALT_T(BP_A)
+#define HOME_U LALT_T(BP_U)
+#define HOME_I LCTL_T(BP_I)
+#define HOME_E LSFT_T(BP_E)
+
+// Right-hand home row mods
+#define HOME_T LSFT_T(BP_T)
+#define HOME_S LCTL_T(BP_S)
+#define HOME_R LALT_T(BP_R)
+#define HOME_N RALT_T(BP_N)
+
+
+#define __________________BEPO_L0__________________        BP_DQUO, BP_LDAQ, BP_RDAQ, BP_LPRN, BP_RPRN
+#define __________________BEPO_L1__________________        BP_B,    BP_EACU, BP_P,    BP_O,    BP_EGRV
+#define __________________BEPO_L2__________________        HOME_A,  HOME_U,  HOME_I,  HOME_E,  BP_COMM
+#define __________________BEPO_L3__________________        BP_AGRV, BP_Y,    BP_X,    BP_DOT,  BP_K
+
+#define __________________BEPO_R0__________________        BP_AT,   BP_PLUS, BP_MINUS, BP_SLSH,  BP_ASTR
+#define __________________BEPO_R1__________________        BP_DCIR, BP_V,    BP_D,     BP_L,     BP_J
+#define __________________BEPO_R2__________________        BP_C,    HOME_T,  HOME_S,   HOME_R,   HOME_N
+#define __________________BEPO_R3__________________        BP_QUOT, BP_Q,    BP_G,     BP_H,     RALT_T(BP_F)
 
 #define ______________AZERTY_BEPO_L0_______________        FR_DQUO,         FR_LDAQ, FR_RDAQ,      FR_LPRN,      FR_RPRN
 #define ______________AZERTY_BEPO_L1_______________        FR_B,            FR_EACU, FR_P,         FR_O,         FR_EGRV
@@ -94,9 +108,9 @@ NOTE: These are all the same length.  If you do a search/replace
 #define _________________ADJUST_R2_________________        RGB_SAD, RGB_HUD, RGB_VAD, RGB_RMOD, _______
 #define _________________ADJUST_R3_________________        KC_NO, TO(_AZERTY_BEPO), TO(_BEPO), KC_NO, KC_NO
 
-#define ___________________NAV_L1__________________        KC_NO,   KC_INS,  KC_HOME, KC_PGUP, KC_PSCR
-#define ___________________NAV_L2__________________        KC_NO,   KC_DEL,  KC_END,  KC_PGDN, KC_SLCK
-#define ___________________NAV_L3__________________        KC_NO,   TO(_AZERTY_BEPO), TO(_BEPO), KC_NO, KC_PAUS
+#define ___________________NAV_L1__________________        DT_PRNT,   KC_INS,  KC_HOME, KC_PGUP, KC_PSCR
+#define ___________________NAV_L2__________________        DT_UP,   KC_DEL,  KC_END,  KC_PGDN, KC_SLCK
+#define ___________________NAV_L3__________________        DT_DOWN,   TO(_AZERTY_BEPO), TO(_BEPO), KC_NO, KC_PAUS
 
 #define ___________________NAV_R1__________________        KC_NO, KC_HOME, KC_NO,   KC_PGUP,  KC_NO
 #define ___________________NAV_R2__________________        KC_NO, KC_END,  KC_UP,   KC_PGDN,  KC_NO
