@@ -17,16 +17,17 @@
  */
 
 // clang-format off
+#define LAYOUT_wrapper(...)            LAYOUT(__VA_ARGS__)
 #define LAYOUT_kyria_base( \
     K01, K02, K03, K04, K05, K06, K07, K08, K09, K0A, \
     K11, K12, K13, K14, K15, K16, K17, K18, K19, K1A, \
     K21, K22, K23, K24, K25, K26, K27, K28, K29, K2A  \
   ) \
   LAYOUT_wrapper( \
-      KC_TAB,         K01,         K02,  K03,  K04,  K05,                                                              K06,   K07,   K08,   K09,   K0A,  BP_Z, \
-      BP_W,           K11,         K12,  K13,  K14,  K15,                                                              K16,   K17,   K18,   K19,   K1A,  BP_M, \
+      KC_TAB,         K01,         K02,  K03,  K04,  K05,                                                              K06,   K07,   K08,   K09,   K0A,         BP_Z, \
+      BP_W,           K11,         K12,  K13,  K14,  K15,                                                              K16,   K17,   K18,   K19,   K1A,         BP_M, \
       LSFT_T(BP_DLR), LALT_T(K21), K22,  K23,  K24,  K25, LCTL_T(KC_ENT), LALT_T(KC_TAB),     KC_LGUI, LCTL_T(KC_ENT), K26,   K27,   K28,   K29,   RALT_T(K2A), BP_CCED, \
-            KC_UP, KC_DOWN, LT(_NUMBR,KC_SPC), LSFT_T(KC_BSPC), LT(_SYMBL,KC_DEL),       LT(_SYMBL,KC_ESC), RSFT_T(KC_SPC), LT(_NUMBR,KC_BSPC), KC_LEFT, KC_RGHT \
+            KC_UP, KC_DOWN, LT(_NUMBR,KC_SPC), LSFT_T(KC_BSPC), LT(_SYMBL,KC_DEL),            LT(_SYMBL,KC_ESC), RSFT_T(KC_SPC), LT(_NUMBR,KC_BSPC), KC_LEFT, KC_RGHT \
   )
 
 /* Re-pass though to allow  ates to b used */
@@ -34,16 +35,22 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
-    [_BEPO] = LAYOUT_kyria_base_wrapper(
-        __________________BEPO_L1__________________, __________________BEPO_R1__________________,
-        __________________BEPO_L2__________________, __________________BEPO_R2__________________,
-        __________________BEPO_L3__________________, __________________BEPO_R3__________________
+    //[_BEPO] = LAYOUT_kyria_base_wrapper(
+    //    __________________BEPO_L1__________________, __________________BEPO_R1__________________,
+    //    __________________BEPO_L2__________________, __________________BEPO_R2__________________,
+    //    __________________BEPO_L3__________________, __________________BEPO_R3__________________
+    //),
+    [_BEPO] = LAYOUT_wrapper(
+        KC_TAB,         __________________BEPO_L1__________________,                                                              __________________BEPO_R1__________________, BP_Z,
+        BP_W,           __________________BEPO_L2__________________,                                                              __________________BEPO_R2__________________, BP_M,
+        LSFT_T(BP_DLR), __________________BEPO_L3__________________, LCTL_T(KC_ENT), LALT_T(KC_TAB),     KC_LGUI, LCTL_T(KC_ENT), __________________BEPO_R3__________________, BP_CCED, 
+            KC_UP, KC_DOWN, LT(_NUMBR,KC_SPC), LSFT_T(KC_BSPC), LT(_SYMBL,KC_DEL),                       LT(_SYMBL,KC_ESC), RSFT_T(KC_SPC), LT(_NUMBR,KC_BSPC), KC_LEFT, KC_RGHT
     ),
     [_AZERTY_BEPO] = LAYOUT_wrapper(
-        KC_TAB, ______________AZERTY_BEPO_L1_______________,                                           ______________AZERTY_BEPO_R1_______________, FR_Z,
-        FR_W,   ______________AZERTY_BEPO_L2_______________,                                           ______________AZERTY_BEPO_R2_______________, FR_M,
-        FR_DLR, ______________AZERTY_BEPO_L3_______________, _______, _______,       _______, _______, ______________AZERTY_BEPO_R3_______________, FR_CCED,
-        KC_UP, KC_DOWN, LT(_NUMBR,KC_SPC), LSFT_T(KC_BSPC), LT(_SYMBL,KC_DEL),      LT(_SYMBL,KC_LGUI), RSFT_T(KC_SPC), LT(_NUMBR,KC_BSPC), KC_LEFT, KC_RGHT
+        KC_TAB,         ______________AZERTY_BEPO_L1_______________,                                                              ______________AZERTY_BEPO_R1_______________, FR_Z,
+        FR_W,           ______________AZERTY_BEPO_L2_______________,                                                              ______________AZERTY_BEPO_R2_______________, FR_M,
+        LSFT_T(FR_DLR), ______________AZERTY_BEPO_L3_______________, LCTL_T(KC_ENT), LALT_T(KC_TAB),     KC_LGUI, LCTL_T(KC_ENT), ______________AZERTY_BEPO_R3_______________, FR_CCED,
+        KC_UP, KC_DOWN, LT(_NUMBR,KC_SPC), LSFT_T(KC_BSPC), LT(_SYMBL,KC_DEL),                           LT(_SYMBL,KC_LGUI), RSFT_T(KC_SPC), LT(_NUMBR,KC_BSPC), KC_LEFT, KC_RGHT
     ),
     [_SYMBL] = LAYOUT_wrapper(
         _______, _________________SYMBL_L1__________________,                                                   _________________SYMBL_R1__________________, BP_EQL,
@@ -78,6 +85,26 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
             return TAPPING_TERM + 300;
         default:
             return TAPPING_TERM;
+    }
+}
+
+bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case RALT_T(BP_A):
+        case LALT_T(BP_U):
+        case LCTL_T(BP_I):
+        case LSFT_T(BP_E):
+        case LSFT_T(BP_T):
+        case LCTL_T(BP_S):
+        case LALT_T(BP_R):
+        case RALT_T(BP_N):  
+            return true;
+        case LT(_NUMBR,KC_SPC):
+        case LSFT_T(KC_BSPC):
+        case LT(_SYMBL,KC_DEL):
+            return false;
+        default:
+            return false;
     }
 }
 

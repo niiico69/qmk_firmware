@@ -104,13 +104,13 @@ NOTE: These are all the same length.  If you do a search/replace
 #define _________________ADJUST_L2_________________        RGB_TOG, RGB_SAI, RGB_HUI, RGB_VAI, RGB_MOD
 #define _________________ADJUST_L3_________________        _______, RGB_SAD, RGB_HUD, RGB_VAD, RGB_RMOD
 
-#define _________________ADJUST_R1_________________        RGB_SAI, RGB_HUI, RGB_VAI, RGB_MOD, RGB_TOG
-#define _________________ADJUST_R2_________________        RGB_SAD, RGB_HUD, RGB_VAD, RGB_RMOD, _______
-#define _________________ADJUST_R3_________________        KC_NO, TO(_AZERTY_BEPO), TO(_BEPO), KC_NO, KC_NO
+#define _________________ADJUST_R1_________________        RGB_SAI, RGB_HUI,          RGB_VAI,   RGB_MOD,  RGB_TOG
+#define _________________ADJUST_R2_________________        RGB_SAD, RGB_HUD,          RGB_VAD,   RGB_RMOD, _______
+#define _________________ADJUST_R3_________________        KC_NO,   TO(_AZERTY_BEPO), TO(_BEPO), KC_NO,    KC_NO
 
-#define ___________________NAV_L1__________________        DT_PRNT,   KC_INS,  KC_HOME, KC_PGUP, KC_PSCR
-#define ___________________NAV_L2__________________        DT_UP,   KC_DEL,  KC_END,  KC_PGDN, KC_SLCK
-#define ___________________NAV_L3__________________        DT_DOWN,   TO(_AZERTY_BEPO), TO(_BEPO), KC_NO, KC_PAUS
+#define ___________________NAV_L1__________________        DT_PRNT, KC_INS,           KC_HOME,   KC_PGUP, KC_PSCR
+#define ___________________NAV_L2__________________        DT_UP,   KC_DEL,           KC_END,    KC_PGDN, KC_SLCK
+#define ___________________NAV_L3__________________        DT_DOWN, TO(_AZERTY_BEPO), TO(_BEPO), KC_NO,   KC_PAUS
 
 #define ___________________NAV_R1__________________        KC_NO, KC_HOME, KC_NO,   KC_PGUP,  KC_NO
 #define ___________________NAV_R2__________________        KC_NO, KC_END,  KC_UP,   KC_PGDN,  KC_NO

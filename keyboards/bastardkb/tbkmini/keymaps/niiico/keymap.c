@@ -80,4 +80,28 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     }
 }
 
+bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case RALT_T(BP_A):
+        case LALT_T(BP_U):
+        case LCTL_T(BP_I):
+        case LSFT_T(BP_E):
+        case LSFT_T(BP_T):
+        case LCTL_T(BP_S):
+        case LALT_T(BP_R):
+        case RALT_T(BP_N):  
+            return true;
+        case LT(_NUMBR,KC_SPC):
+        case LSFT_T(KC_BSPC):
+        case LT(_SYMBL,KC_DEL):
+            return false;
+        default:
+            return false;
+    }
+}
+
+
+
+
+
 
