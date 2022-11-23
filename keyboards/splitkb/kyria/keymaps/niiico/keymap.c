@@ -79,14 +79,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 // clang-format on
 
-uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case RSFT_T(KC_SPC):
-            return TAPPING_TERM + 300;
-        default:
-            return TAPPING_TERM;
-    }
-}
+//uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+//    switch (keycode) {
+//        case RSFT_T(KC_SPC):
+//            return TAPPING_TERM + 300;
+//        default:
+//            return TAPPING_TERM;
+//    }
+//}
 
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
