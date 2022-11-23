@@ -37,10 +37,10 @@ NOTE: These are all the same length.  If you do a search/replace
 #define HOME_N RALT_T(BP_N)
 
 
-#define __________________BEPO_L0__________________        BP_DQUO, BP_LDAQ, BP_RDAQ, BP_LPRN, BP_RPRN
-#define __________________BEPO_L1__________________        BP_B,    BP_EACU, BP_P,    BP_O,    BP_EGRV
-#define __________________BEPO_L2__________________        HOME_A,  HOME_U,  HOME_I,  HOME_E,  BP_COMM
-#define __________________BEPO_L3__________________        BP_AGRV, BP_Y,    BP_X,    BP_DOT,  BP_K
+#define __________________BEPO_L0__________________        BP_DQUO,         BP_LDAQ, BP_RDAQ, BP_LPRN, BP_RPRN
+#define __________________BEPO_L1__________________        BP_B,            BP_EACU, BP_P,    BP_O,    BP_EGRV
+#define __________________BEPO_L2__________________        HOME_A,          HOME_U,  HOME_I,  HOME_E,  BP_COMM
+#define __________________BEPO_L3__________________        LALT_T(BP_AGRV), BP_Y,    BP_X,    BP_DOT,  BP_K
 
 #define __________________BEPO_R0__________________        BP_AT,   BP_PLUS, BP_MINUS, BP_SLSH,  BP_ASTR
 #define __________________BEPO_R1__________________        BP_DCIR, BP_V,    BP_D,     BP_L,     BP_J
