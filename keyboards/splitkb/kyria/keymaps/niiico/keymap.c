@@ -52,6 +52,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         LSFT_T(FR_DLR), ______________AZERTY_BEPO_L3_______________, LCTL_T(KC_ENT), LALT_T(KC_TAB),     KC_LGUI, LCTL_T(KC_ENT), ______________AZERTY_BEPO_R3_______________, FR_CCED,
         KC_UP, KC_DOWN, LT(_NUMBR,KC_SPC), LSFT_T(KC_BSPC), LT(_SYMBL,KC_DEL),                           LT(_SYMBL,KC_LGUI), RSFT_T(KC_SPC), LT(_NUMBR,KC_BSPC), KC_LEFT, KC_RGHT
     ),
+    [_BEPO_42] = LAYOUT_wrapper(
+        KC_TAB,        __________________BEPO_L1__________________,                                __________________BEPO_R1__________________,BP_Z,
+        BP_W,          __________________BEPO_L2__________________,                                __________________BEPO_R2__________________,BP_M,
+        LSFT_T(BP_DLR),__________________BEPO_L3__________________, KC_NO, KC_NO,    KC_NO, KC_NO, __________________BEPO_R3__________________,BP_CCED,
+               KC_NO, KC_NO, LT(_NAV,KC_ESC), LSFT_T(KC_BSPC), LT(_SYMBL,KC_DEL),    LT(_SYMBL,KC_LGUI), RSFT_T(KC_SPC), LT(_NUMBR,KC_ENTER), KC_NO, KC_NO
+    ),
     [_SYMBL] = LAYOUT_wrapper(
         _______, _________________SYMBL_L1__________________,                                                   _________________SYMBL_R1__________________, BP_EQL,
         KC_NO,   _________________SYMBL_L2__________________,                                                   _________________SYMBL_R2__________________, BP_DEG,

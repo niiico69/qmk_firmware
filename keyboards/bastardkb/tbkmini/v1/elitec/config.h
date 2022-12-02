@@ -32,3 +32,6 @@
 
 /* RGB settings. */
 #define RGB_DI_PIN D2
+
+#define USB_SUSPEND_WAKEUP_DELAY 200
+
