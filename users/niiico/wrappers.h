@@ -36,6 +36,17 @@ NOTE: These are all the same length.  If you do a search/replace
 #define HOME_R LALT_T(BP_R)
 #define HOME_N RALT_T(BP_N)
 
+// Left-hand home row mods for mac
+#define HOMM_A LALT_T(BP_A)
+#define HOMM_U LCTL_T(BP_U)
+#define HOMM_I LGUI_T(BP_I)
+#define HOMM_E LSFT_T(BP_E)
+
+// Right-hand home row mods for mac
+#define HOMM_T LSFT_T(BP_T)
+#define HOMM_S LGUI_T(BP_S)
+#define HOMM_R LCTL_T(BP_R)
+#define HOMM_N LALT_T(BP_N)
 
 #define __________________BEPO_L0__________________        BP_DQUO,         BP_LDAQ, BP_RDAQ, BP_LPRN, BP_RPRN
 #define __________________BEPO_L1__________________        BP_B,            BP_EACU, BP_P,    BP_O,    BP_EGRV
@@ -46,6 +57,16 @@ NOTE: These are all the same length.  If you do a search/replace
 #define __________________BEPO_R1__________________        BP_DCIR, BP_V,    BP_D,     BP_L,     BP_J
 #define __________________BEPO_R2__________________        BP_C,    HOME_T,  HOME_S,   HOME_R,   HOME_N
 #define __________________BEPO_R3__________________        BP_QUOT, BP_Q,    BP_G,     BP_H,     RALT_T(BP_F)
+
+#define ________________BEPO_MAC_L0________________        BP_DQUO,         BP_LDAQ, BP_RDAQ, BP_LPRN, BP_RPRN
+#define ________________BEPO_MAC_L1________________        BP_B,            BP_EACU, BP_P,    BP_O,    BP_EGRV
+#define ________________BEPO_MAC_L2________________        HOMM_A,          HOMM_U,  HOMM_I,  HOMM_E,  BP_COMM
+#define ________________BEPO_MAC_L3________________        LALT_T(BP_AGRV), BP_Y,    BP_X,    BP_DOT,  BP_K
+
+#define ________________BEPO_MAC_R0________________        BP_AT,   BP_PLUS, BP_MINUS, BP_SLSH,  BP_ASTR
+#define ________________BEPO_MAC_R1________________        BP_DCIR, BP_V,    BP_D,     BP_L,     BP_J
+#define ________________BEPO_MAC_R2________________        BP_C,    HOMM_T,  HOMM_S,   HOMM_R,   HOMM_N
+#define ________________BEPO_MAC_R3________________        BP_QUOT, BP_Q,    BP_G,     BP_H,     RALT_T(BP_F)
 
 #define ______________AZERTY_BEPO_L0_______________        FR_DQUO,         FR_LDAQ, FR_RDAQ,      FR_LPRN,      FR_RPRN
 #define ______________AZERTY_BEPO_L1_______________        FR_B,            FR_EACU, FR_P,         FR_O,         FR_EGRV
@@ -104,13 +125,13 @@ NOTE: These are all the same length.  If you do a search/replace
 #define _________________ADJUST_L2_________________        RGB_TOG, RGB_SAI, RGB_HUI, RGB_VAI, RGB_MOD
 #define _________________ADJUST_L3_________________        _______, RGB_SAD, RGB_HUD, RGB_VAD, RGB_RMOD
 
-#define _________________ADJUST_R1_________________        RGB_SAI, RGB_HUI,          RGB_VAI,   RGB_MOD,      RGB_TOG
-#define _________________ADJUST_R2_________________        RGB_SAD, RGB_HUD,          RGB_VAD,   RGB_RMOD,     _______
-#define _________________ADJUST_R3_________________        KC_NO,   TO(_AZERTY_BEPO), TO(_BEPO), TO(_BEPO_42), KC_NO
+#define _________________ADJUST_R1_________________        RGB_SAI, RGB_HUI,          RGB_VAI,   RGB_MOD,       RGB_TOG
+#define _________________ADJUST_R2_________________        RGB_SAD, RGB_HUD,          RGB_VAD,   RGB_RMOD,      _______
+#define _________________ADJUST_R3_________________        KC_NO,   TO(_AZERTY_BEPO), TO(_BEPO), TO(_BEPO_MAC), TO(_BEPO_42)
 
-#define ___________________NAV_L1__________________        KC_NO, KC_INS,           KC_HOME,   KC_PGUP,      KC_PSCR
-#define ___________________NAV_L2__________________        KC_NO, KC_DEL,           KC_END,    KC_PGDN,      KC_SLCK
-#define ___________________NAV_L3__________________        KC_NO, TO(_AZERTY_BEPO), TO(_BEPO), TO(_BEPO_42), KC_PAUS
+#define ___________________NAV_L1__________________        DT_PRNT, KC_INS,           KC_HOME,   KC_PGUP,       KC_PSCR
+#define ___________________NAV_L2__________________        DT_UP,   KC_DEL,           KC_END,    KC_PGDN,       KC_SLCK
+#define ___________________NAV_L3__________________        DT_DOWN, TO(_AZERTY_BEPO), TO(_BEPO), TO(_BEPO_MAC), TO(_BEPO_42)
 
 #define ___________________NAV_R1__________________        KC_NO, KC_HOME, KC_NO,   KC_PGUP,  KC_NO
 #define ___________________NAV_R2__________________        KC_NO, KC_END,  KC_UP,   KC_PGDN,  KC_NO
