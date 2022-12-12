@@ -109,12 +109,20 @@ bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
         case HOME_T:
         case HOME_S:
         case HOME_R:
-        case HOME_N:  
+        case HOME_N:
+        case HOMM_A:
+        case HOMM_U:
+        case HOMM_I:
+//        case HOMM_E:   # Ces touches sont en fait les même que la version HOME
+//        case HOMM_T:   # Ces touches sont en fait les même que la version HOME
+        case HOMM_S:
+        case HOMM_R:
+        case HOMM_N:  
             return true;
-        case LT(_NUMBR,KC_SPC):
-        case LSFT_T(KC_BSPC):
-        case LT(_SYMBL,KC_DEL):
-            return false;
+//        case LT(_NUMBR,KC_SPC):
+//        case LSFT_T(KC_BSPC):
+//        case LT(_SYMBL,KC_DEL):
+//            return false;
         default:
             return false;
     }

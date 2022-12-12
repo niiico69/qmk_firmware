@@ -96,12 +96,13 @@ NOTE: These are all the same length.  If you do a search/replace
 #define _________________QWERTY_R2_________________        KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN
 #define _________________QWERTY_R3_________________        KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLASH
 
-#define ________________NUMBER_LEFT________________       BP_1,  BP_2,  BP_3,  BP_4,  BP_5
-#define ________________NUMBER_RIGHT_______________       BP_6,  BP_7,  BP_8,  BP_9,  BP_0
-#define _________________FUNC_ROW1_________________       KC_F1, KC_F2, KC_F3, KC_F4, KC_F5
-#define _________________FUNC_ROW2_________________       KC_F6, KC_F7, KC_F8, KC_F9, KC_F10
+#define ________________NUMBER_LEFT________________        BP_1,  BP_2,  BP_3,  BP_4,  BP_5
+#define ________________NUMBER_RIGHT_______________        BP_6,  BP_7,  BP_8,  BP_9,  BP_0
+#define _________________FUNC_ROW1_________________        KC_F1, KC_F2, KC_F3, KC_F4, KC_F5
+#define _________________FUNC_ROW2_________________        KC_F6, KC_F7, KC_F8, KC_F9, KC_F10
 
 #define ___________________BLANK___________________        _______, _______, _______, _______, _______
+#define ___________________KC_NO___________________        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO
 
 
 #define _________________SYMBL_L1__________________        BP_DQUO, BP_LDAQ, BP_RDAQ, BP_LPRN, BP_RPRN
@@ -121,17 +122,17 @@ NOTE: These are all the same length.  If you do a search/replace
 #define _________________NUMBR_R3__________________        BP_0,    BP_1, BP_2, BP_3, KC_PDOT
 
 
-#define _________________ADJUST_L1_________________        ___________________BLANK___________________
-#define _________________ADJUST_L2_________________        RGB_TOG, RGB_SAI, RGB_HUI, RGB_VAI, RGB_MOD
-#define _________________ADJUST_L3_________________        _______, RGB_SAD, RGB_HUD, RGB_VAD, RGB_RMOD
+#define _________________ADJUST_L1_________________        RGB_TOG, RGB_SAI, RGB_HUI, RGB_VAI, RGB_MOD
+#define _________________ADJUST_L2_________________        KC_NO,   RGB_SAD, RGB_HUD, RGB_VAD, RGB_RMOD
+#define _________________ADJUST_L3_________________        ___________________KC_NO___________________
 
-#define _________________ADJUST_R1_________________        RGB_SAI, RGB_HUI,          RGB_VAI,   RGB_MOD,       RGB_TOG
-#define _________________ADJUST_R2_________________        RGB_SAD, RGB_HUD,          RGB_VAD,   RGB_RMOD,      _______
-#define _________________ADJUST_R3_________________        KC_NO,   TO(_AZERTY_BEPO), TO(_BEPO), TO(_BEPO_MAC), TO(_BEPO_42)
+#define _________________ADJUST_R1_________________        RGB_MOD,  RGB_VAI,          RGB_HUI,   RGB_SAI,       RGB_TOG
+#define _________________ADJUST_R2_________________        RGB_RMOD, RGB_VAD,          RGB_HUD,   RGB_SAD,       KC_NO
+#define _________________ADJUST_R3_________________        KC_NO,    TO(_AZERTY_BEPO), TO(_BEPO), TO(_BEPO_MAC), TO(_BEPO_42)
 
-#define ___________________NAV_L1__________________        DT_PRNT, KC_INS,           KC_HOME,   KC_PGUP,       KC_PSCR
-#define ___________________NAV_L2__________________        DT_UP,   KC_DEL,           KC_END,    KC_PGDN,       KC_SLCK
-#define ___________________NAV_L3__________________        DT_DOWN, TO(_AZERTY_BEPO), TO(_BEPO), TO(_BEPO_MAC), TO(_BEPO_42)
+#define ___________________NAV_L1__________________        KC_NO, KC_INS,           KC_HOME,   KC_PGUP,       KC_PSCR
+#define ___________________NAV_L2__________________        KC_NO, KC_DEL,           KC_END,    KC_PGDN,       KC_SLCK
+#define ___________________NAV_L3__________________        KC_NO, TO(_AZERTY_BEPO), TO(_BEPO), TO(_BEPO_MAC), TO(_BEPO_42)
 
 #define ___________________NAV_R1__________________        KC_NO, KC_HOME, KC_NO,   KC_PGUP,  KC_NO
 #define ___________________NAV_R2__________________        KC_NO, KC_END,  KC_UP,   KC_PGDN,  KC_NO
