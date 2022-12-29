@@ -36,19 +36,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TAB,        __________________BEPO_L1__________________,            __________________BEPO_R1__________________,BP_Z,
        BP_W,          __________________BEPO_L2__________________,            __________________BEPO_R2__________________,BP_M,
        LSFT_T(BP_DLR),__________________BEPO_L3__________________,            __________________BEPO_R3__________________,BP_CCED,
-            LT(_NAV,KC_ESC), LSFT_T(KC_BSPC), LT(_SYMBL,KC_DEL),            LT(_SYMBL,KC_ENTER), RSFT_T(KC_SPC), LT(_NUMBR,KC_LGUI)
+            LT(_NAV,KC_ESC), KC_BSPC, LT(_SYMBL,KC_DEL),            LT(_SYMBL,KC_ENTER), KC_SPC, LT(_NUMBR,KC_LGUI)
     ),
     [_BEPO_MAC] = LAYOUT_wrapper(
        KC_TAB,        ________________BEPO_MAC_L1________________,            ________________BEPO_MAC_R1________________,BP_Z,
        BP_W,          ________________BEPO_MAC_L2________________,            ________________BEPO_MAC_R2________________,BP_M,
        LSFT_T(BP_DLR),________________BEPO_MAC_L3________________,            ________________BEPO_MAC_R3________________,BP_CCED,
-            LT(_NAV,KC_ESC), LSFT_T(KC_BSPC), LT(_SYMBL,KC_DEL),            LT(_SYMBL,KC_ENTER), RSFT_T(KC_SPC), LT(_NUMBR,KC_LGUI)
+            LT(_NAV,KC_ESC), KC_BSPC, LT(_SYMBL,KC_DEL),            LT(_SYMBL,KC_ENTER), KC_SPC, LT(_NUMBR,KC_LGUI)
     ),
     [_AZERTY_BEPO] = LAYOUT_wrapper(
         KC_TAB, ______________AZERTY_BEPO_L1_______________,                  ______________AZERTY_BEPO_R1_______________, FR_Z,
         FR_W,   ______________AZERTY_BEPO_L2_______________,                  ______________AZERTY_BEPO_R2_______________, FR_M,
         FR_DLR, ______________AZERTY_BEPO_L3_______________,                  ______________AZERTY_BEPO_R3_______________, FR_CCED,
-            LT(_NAV,KC_ESC), LSFT_T(KC_BSPC), LT(_SYMBL,KC_DEL),            LT(_SYMBL,KC_ENTER), RSFT_T(KC_SPC), LT(_NUMBR,KC_LGUI)
+            LT(_NAV,KC_ESC), KC_BSPC, LT(_SYMBL,KC_DEL),            LT(_SYMBL,KC_ENTER), KC_SPC, LT(_NUMBR,KC_LGUI)
     ),
     [_SYMBL] = LAYOUT_wrapper(
         _______, _________________SYMBL_L1__________________,                 _________________SYMBL_R1__________________, BP_EQL,

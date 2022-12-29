@@ -56,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,        __________________BEPO_L1__________________,                                __________________BEPO_R1__________________,BP_Z,
         BP_W,          __________________BEPO_L2__________________,                                __________________BEPO_R2__________________,BP_M,
         LSFT_T(BP_DLR),__________________BEPO_L3__________________, KC_NO, KC_NO,    KC_NO, KC_NO, __________________BEPO_R3__________________,BP_CCED,
-               KC_NO, KC_NO, LT(_NAV,KC_ESC), LSFT_T(KC_BSPC), LT(_SYMBL,KC_DEL),    LT(_SYMBL,KC_ENTER), RSFT_T(KC_SPC), LT(_NUMBR,KC_LGUI), KC_NO, KC_NO
+                   KC_NO, KC_NO, LT(_NAV,KC_ESC), KC_BSPC, LT(_SYMBL,KC_DEL),            LT(_SYMBL,KC_ENTER), KC_SPC, LT(_NUMBR,KC_LGUI), KC_NO, KC_NO
     ),
     [_SYMBL] = LAYOUT_wrapper(
         _______, _________________SYMBL_L1__________________,                                                   _________________SYMBL_R1__________________, BP_EQL,
@@ -68,7 +68,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _________________NUMBR_L1__________________,                                       _________________NUMBR_R1__________________, BP_EQL,
         KC_NO,   _________________NUMBR_L2__________________,                                       _________________NUMBR_R2__________________, BP_PLUS,
         _______, _________________NUMBR_L3__________________, _______, _______,    KC_INS, KC_NLCK, _________________NUMBR_R3__________________, BP_SLSH,
-                                     KC_F11, KC_F12, _______, _______, _______,   _______, _______, _______, LSFT(KC_0), KP_00
+                                     KC_F11, KC_F12, _______, _______, _______,   _______, _______, _______, KC_0, KP_00
     ),
     [_ADJUST] = LAYOUT_wrapper(
         _______, _________________ADJUST_L1_________________,                                       _________________ADJUST_R1_________________, _______,
