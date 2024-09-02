@@ -132,7 +132,7 @@ NOTE: These are all the same length.  If you do a search/replace
 
 #define ___________________NAV_L1__________________        KC_NO, KC_INS,           KC_HOME,   KC_PGUP,       KC_PSCR
 #define ___________________NAV_L2__________________        KC_NO, KC_DEL,           KC_END,    KC_PGDN,       KC_SLCK
-#define ___________________NAV_L3__________________        KC_NO, TO(_AZERTY_BEPO), TO(_BEPO), TO(_BEPO_MAC), TO(_BEPO_42)
+#define ___________________NAV_L3__________________        KC_NO, TO(_AZERTY_BEPO), TO(_BEPO), TO(_BEPO_MAC), KC_NO
 
 #define ___________________NAV_R1__________________        KC_NO, KC_HOME, KC_NO,   KC_PGUP,  KC_NO
 #define ___________________NAV_R2__________________        KC_NO, KC_END,  KC_UP,   KC_PGDN,  KC_NO
